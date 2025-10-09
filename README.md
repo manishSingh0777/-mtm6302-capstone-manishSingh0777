@@ -28,3 +28,28 @@ The mockup shows layouts for different screen sizes (desktop and mobile).
 On mobile, elements stack vertically to maximize space and maintain readability, while on desktop the layout balances image and text side by side.  
 This ensures the design adapts smoothly across devices.
 
+### Part 3 - Html and css
+Capstone Project – Part 3
+Overview
+
+Prototype web app built with HTML and CSS based on Part 2 mockups. Includes two pages, responsive layout, and themed backgrounds.
+
+Files
+
+index.html – Landing page (astronaut image, date picker, favourites link)
+
+picture.html – Picture of the Day page (mission overview, Mars image, date, credits)
+
+style.css – Shared stylesheet
+
+assets/ – Images and backgrounds
+
+Progress
+
+Created a new branch part-3
+
+Added structure and styles for both pages
+
+Applied background images (Space red.jpg and night sky.jpg)
+
+Improved layout, spacing, and responsiveness

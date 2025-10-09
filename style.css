@@ -1,0 +1,238 @@
+:root {
+  --bg-deep: #0b0f18;
+  --glass: rgba(20, 22, 40, 0.78);
+  --text: #e9eefc;
+  --muted: #c3cce6;
+  --lime: #d4e157;
+  --orange: #ff7a00;
+  --cyan: #2dd4bf;
+  --warm: #ffeaa7;
+  --red: #ff5a5a;
+  --radius: 16px;
+  --shadow: 0 20px 50px rgba(0, 0, 0, .45);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg-deep);
+}
+
+.theme-space {
+  background: #000 url("assets/Space red.jpg") center/cover fixed no-repeat;
+}
+
+.theme-stars {
+  background: #000 url("assets/night sky.jpg") center/cover fixed no-repeat;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 30px 0;
+}
+
+.page-title {
+  font-size: clamp(32px, 5vw, 56px);
+  margin: 0 0 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  background: #fff;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+.btn:hover {
+  opacity: .9;
+}
+.btn-warm {
+  background: var(--warm);
+  border-color: #2a2010;
+  color: #1b1400;
+}
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(16px, 4vw, 56px);
+  align-items: center;
+}
+
+.media__img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  display: block;
+}
+
+.card {
+  background: var(--glass);
+  backdrop-filter: saturate(120%) blur(6px);
+  border-radius: 20px;
+  padding: clamp(18px, 3vw, 28px);
+  width: 100%;
+  max-width: 560px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: var(--shadow);
+}
+.card__label {
+  display: block;
+  font-size: clamp(20px, 2.6vw, 28px);
+  color: var(--lime);
+  margin-bottom: 14px;
+}
+.date-input {
+  width: 100%;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, .06);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 12px;
+  font-size: 1rem;
+  margin-bottom: 22px;
+}
+.date-input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+.fav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(16px, 1.9vw, 22px);
+  border: 2px solid transparent;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+.fav-link:hover {
+  border-color: var(--lime);
+}
+
+.picture-wrap {
+  padding-top: clamp(16px, 3vw, 28px);
+  padding-bottom: 80px;
+}
+
+.picture-head .kicker {
+  color: var(--orange);
+  font-size: clamp(26px, 4vw, 46px);
+  letter-spacing: .5px;
+  margin: 0 0 6px;
+}
+.picture-head .subtitle {
+  color: #b5ff39;
+  font-size: clamp(20px, 3vw, 34px);
+  margin: 0 0 18px;
+}
+
+.picture-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 24px;
+  align-items: start;
+  width: 100%;
+}
+
+.mission__title {
+  color: #fff;
+  font-size: clamp(22px, 2.6vw, 30px);
+  margin: 8px 0 12px;
+}
+.mission__text {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.25rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  margin-bottom: 24px;
+  max-width: 100%;
+}
+
+.image-card {
+  position: relative;
+  background: rgba(10, 12, 18, .65);
+  border: 3px solid var(--red);
+  border-radius: var(--radius);
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+.image-card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  max-height: 650px;
+  object-fit: cover;
+}
+.image-card__heart {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 24px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .6));
+}
+
+.pod-date-lg {
+  grid-column: 2;
+  font-size: clamp(26px, 4vw, 40px);
+  color: var(--cyan);
+  margin-top: 16px;
+  text-align: center;
+  transform: translateX(285px);
+}
+.credit-line {
+  position: fixed;
+  bottom: 12px;
+  right: 30px;
+  color: #eaff00;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 980px) {
+  .landing-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .media__img {
+    width: min(520px, 90vw);
+    margin-inline: auto;
+  }
+  .card {
+    margin-inline: auto;
+  }
+  .picture-grid {
+    grid-template-columns: 1fr;
+  }
+  .pod-date-lg {
+    grid-column: 1;
+    margin-top: 16px;
+    transform: none;
+  }
+  .credit-line {
+    position: static;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Astronomy Picture Day</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-space">
+  <main class="container landing-grid">
+    <!-- Left: Astronaut hero image -->
+    <section class="media">
+      <img src="assets/Astronaut.jpg" alt="Astronaut standing" class="media__img" />
+    </section>
+
+    <!-- Right: title + card -->
+    <section class="landing-content">
+      <h1 class="page-title">Astronomy Picture Day</h1>
+
+      <div class="card">
+        <label for="pod-date" class="card__label">Please Pick a date</label>
+        <input id="pod-date" type="date" aria-label="yyyy-mm-dd" class="date-input" />
+
+        <a class="fav-link" href="#" aria-disabled="true">
+          View your Favourites <span aria-hidden="true">💛</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
