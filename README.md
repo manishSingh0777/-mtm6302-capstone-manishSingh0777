@@ -53,3 +53,24 @@ Added structure and styles for both pages
 Applied background images (Space red.jpg and night sky.jpg)
 
 Improved layout, spacing, and responsiveness
+
+
+### Part 4 - Javascript ###
+
+
+Picture Day is a web application that allows users to explore daily featured images from Wikimedia, based on a selected date. Users can view high-quality images, read their description, and save their favorite pictures to a personal favourites page for easy access later
+
+Feature
+Select a date to view the featured image of that day.
+- Display image, title, and description dynamically using Wikimedia API.
+- Add images to a favourites page with a single click.
+- Remove images from favourites page easily.
+- Responsive design for desktop and mobile devices.
+- Fallbacks for missing images or API errors.
+
+Challenges Faced
+Extracting clean titles from HTML tags in API response.
+Resizing images for favourites page thumbnails.
+Resetting page content on refresh.
+Formatting dates for the Wikimedia API.
+Handling missing images or descriptions gracefully.
