@@ -3,29 +3,51 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Astronomy Picture Day</title>
+  <title>Picture Day</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="theme-space">
-  <main class="container landing-grid">
-    <!-- Left: Astronaut hero image -->
+
+  <main class="container landing-grid" id="landing-section">
     <section class="media">
       <img src="assets/Astronaut.jpg" alt="Astronaut standing" class="media__img" />
     </section>
 
-    <!-- Right: title + card -->
     <section class="landing-content">
-      <h1 class="page-title">Astronomy Picture Day</h1>
+      <h1 class="page-title">Picture Day</h1>
 
       <div class="card">
         <label for="pod-date" class="card__label">Please Pick a date</label>
         <input id="pod-date" type="date" aria-label="yyyy-mm-dd" class="date-input" />
 
-        <a class="fav-link" href="#" aria-disabled="true">
+        <a id="fav-page" class="fav-link" href="favourites.html">
           View your Favourites <span aria-hidden="true">💛</span>
         </a>
       </div>
     </section>
   </main>
+
+  <section id="pod-section" class="container picture-wrap hidden">
+    <div class="picture-head">
+      <h2 class="kicker">Featured Picture of the Day</h2>
+      <p class="subtitle" id="selected-date"></p>
+    </div>
+
+    <div class="picture-grid">
+      <div class="image-card">
+        <img id="photo" class="image-card__img" alt="Picture of the day">
+        <button id="save-fav" class="btn btn-warm">Add to Favourites</button>
+      </div>
+
+      <div>
+        <h3 id="pod-title" class="mission__title">Loading...</h3>
+        <p id="description" class="mission__text"></p>
+      </div>
+    </div>
+  </section>
+
+  <p class="credit-line">Powered by Wikimedia Featured Picture API</p>
+
+  <script src="script.js"></script>
 </body>
 </html>
