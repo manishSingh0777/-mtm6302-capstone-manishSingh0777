@@ -63,11 +63,10 @@ async function loadPicture(date) {
 
     podImg.src = src;
 
-    // FIX: Extract clean title from <span class="mw-page-title-main">...</span>
+    // CLEAN TITLE: Remove 'File:' prefix and file extension
     let titleText = "No title available";
     if (image.title) {
-      const spanMatch = image.title.match(/<span class="mw-page-title-main">(.*?)<\/span>/);
-      titleText = spanMatch ? spanMatch[1] : image.title;
+      titleText = image.title.replace(/^File:/, '').replace(/\.[^/.]+$/, '');
     } else if (data.tfa?.titles?.display) {
       titleText = data.tfa.titles.display;
     }
