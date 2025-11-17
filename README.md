@@ -74,3 +74,11 @@ Resizing images for favourites page thumbnails.
 Resetting page content on refresh.
 Formatting dates for the Wikimedia API.
 Handling missing images or descriptions gracefully.
+
+Resources
+
+- Wikimedia Featured Picture API (for daily astronomy images)
+- GitHub (for version control and hosting the project)
+- ChatGPT (GPT-5 for guidance and coding assistance during the assignment)
+- Online documentation and tutorials for HTML, CSS, and JavaScript
+
